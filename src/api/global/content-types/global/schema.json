@@ -58,6 +58,11 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.footer"
+    },
+    "nestedNav": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.nav-item"
     }
   }
 }
