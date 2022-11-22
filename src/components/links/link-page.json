@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_links_link_pages",
+  "info": {
+    "displayName": "Link internal page",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "newTab": {
+      "type": "boolean"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page.page"
+    }
+  }
+}
