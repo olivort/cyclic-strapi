@@ -38,14 +38,14 @@
       ]
     },
     "slug": {
-      "type": "string",
-      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
-      "required": true,
-      "unique": true
+      "type": "uid",
+      "targetField": "shortName",
+      "required": true
     },
     "primaryColor": {
-      "type": "customField",
-      "customField": "plugin::color-picker.color"
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.color"
     }
   }
 }
