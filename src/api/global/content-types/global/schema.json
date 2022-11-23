@@ -63,6 +63,11 @@
       "type": "component",
       "repeatable": true,
       "component": "layout.nav-item"
+    },
+    "brand": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.brand"
     }
   }
 }
