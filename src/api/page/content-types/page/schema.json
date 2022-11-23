@@ -5,7 +5,8 @@
     "singularName": "page",
     "pluralName": "pages",
     "displayName": "Page",
-    "name": "page"
+    "name": "page",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -38,7 +39,13 @@
     },
     "slug": {
       "type": "string",
-      "regex": "^$|^[a-zA-Z/-]+$"
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "required": true,
+      "unique": true
+    },
+    "primaryColor": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color"
     }
   }
 }
