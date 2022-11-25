@@ -10,6 +10,7 @@
     "tailwindColor": {
       "type": "enumeration",
       "enum": [
+        "primary",
         "slate",
         "gray",
         "zinc",
