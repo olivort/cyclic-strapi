@@ -26,15 +26,23 @@
     "contentSections": {
       "type": "dynamiczone",
       "components": [
-        "sections.hero",
         "sections.bottom-actions",
+        "sections.card-link-grid",
+        "sections.carousel",
         "sections.feature-columns-group",
-        "sections.testimonials-group",
+        "sections.feature-rows-group",
+        "sections.grid-menu",
+        "sections.hero",
+        "sections.image-grid",
         "sections.large-video",
-        "sections.rich-text",
-        "sections.pricing",
         "sections.lead-form",
-        "sections.feature-rows-group"
+        "sections.map",
+        "sections.pdf-viewer",
+        "sections.posts",
+        "sections.pricing",
+        "sections.rich-text",
+        "sections.team-grid",
+        "sections.testimonials-group"
       ]
     },
     "slug": {

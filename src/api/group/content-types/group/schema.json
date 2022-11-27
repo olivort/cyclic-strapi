@@ -4,7 +4,8 @@
   "info": {
     "singularName": "group",
     "pluralName": "groups",
-    "displayName": "Group"
+    "displayName": "Group",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,11 +24,11 @@
       "target": "api::team.team",
       "inversedBy": "groups"
     },
-    "student": {
+    "students": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::student.student",
-      "inversedBy": "group"
+      "mappedBy": "group"
     }
   }
 }
