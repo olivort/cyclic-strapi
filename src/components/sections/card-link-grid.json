@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_card_link_grids",
+  "info": {
+    "displayName": "Card link grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

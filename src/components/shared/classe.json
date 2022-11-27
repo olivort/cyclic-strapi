@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_classes",
+  "info": {
+    "displayName": "Classe"
+  },
+  "options": {},
+  "attributes": {
+    "classe": {
+      "type": "enumeration",
+      "enum": [
+        "Administration",
+        "M1",
+        "M2",
+        "M3",
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ]
+    },
+    "numero": {
+      "type": "enumeration",
+      "enum": [
+        "a",
+        "b",
+        "c"
+      ]
+    }
+  }
+}

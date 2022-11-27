@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_elements_avatars",
+  "info": {
+    "displayName": "avatar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::team.team"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_pdf_viewers",
+  "info": {
+    "displayName": "PDF viewer"
+  },
+  "options": {},
+  "attributes": {
+    "pdf": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "viewOnly": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
