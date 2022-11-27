@@ -18,12 +18,6 @@
       "type": "uid",
       "targetField": "name"
     },
-    "group": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::group.group",
-      "inversedBy": "student"
-    },
     "picture": {
       "allowedTypes": [
         "images"
@@ -35,6 +29,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::parent.parent",
+      "inversedBy": "students"
+    },
+    "group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group.group",
       "inversedBy": "students"
     }
   }
