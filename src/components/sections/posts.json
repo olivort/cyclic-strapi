@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_posts",
+  "info": {
+    "displayName": "Posts"
+  },
+  "options": {},
+  "attributes": {
+    "category_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "fromDate": {
+      "type": "date"
+    },
+    "toDate": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_grid_menus",
+  "info": {
+    "displayName": "Grid Menu"
+  },
+  "options": {},
+  "attributes": {
+    "week": {
+      "type": "string",
+      "required": true,
+      "default": "Semaine du"
+    },
+    "gridMenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.card-menu-restaurant"
+    }
+  }
+}

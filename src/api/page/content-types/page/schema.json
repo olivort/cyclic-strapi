@@ -29,12 +29,12 @@
         "sections.hero",
         "sections.bottom-actions",
         "sections.feature-columns-group",
-        "sections.feature-rows-group",
         "sections.testimonials-group",
         "sections.large-video",
         "sections.rich-text",
         "sections.pricing",
-        "sections.lead-form"
+        "sections.lead-form",
+        "sections.feature-rows-group"
       ]
     },
     "slug": {
@@ -46,6 +46,14 @@
       "type": "component",
       "repeatable": false,
       "component": "layout.color"
+    },
+    "showTitle": {
+      "type": "boolean",
+      "default": false
+    },
+    "showTableOfContents": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

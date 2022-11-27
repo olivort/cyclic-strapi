@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_card_links",
+  "info": {
+    "displayName": "Card Link",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "color": {
+      "type": "component",
+      "repeatable": false,
+      "component": "layout.color"
+    },
+    "internalLink": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link-page"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    }
+  }
+}
