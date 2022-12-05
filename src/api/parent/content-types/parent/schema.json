@@ -4,10 +4,11 @@
   "info": {
     "singularName": "parent",
     "pluralName": "parents",
-    "displayName": "Parent"
+    "displayName": "Parent",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -24,10 +25,10 @@
     "description": {
       "type": "richtext"
     },
-    "students": {
+    "families": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::student.student",
+      "target": "api::family.family",
       "inversedBy": "parents"
     }
   }

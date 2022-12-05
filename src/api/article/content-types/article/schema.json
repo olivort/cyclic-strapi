@@ -33,26 +33,29 @@
         "videos"
       ]
     },
-    "author": {
+    "categories": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::author.author",
-      "inversedBy": "articles"
-    },
-    "category": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::category.category",
-      "inversedBy": "articles"
+      "relation": "oneToMany",
+      "target": "api::category.category"
     },
     "blocks": {
       "type": "dynamiczone",
       "components": [
         "shared.media",
-        "shared.quote",
         "shared.rich-text",
         "shared.slider"
       ]
+    },
+    "team_member": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::team.team",
+      "inversedBy": "articles"
+    },
+    "groups": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group.group"
     }
   }
 }

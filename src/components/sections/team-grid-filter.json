@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_team_grid_filter_s",
+  "info": {
+    "displayName": "Team grid (filter)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "numberPerRow": {
+      "type": "integer",
+      "min": 1,
+      "max": 5,
+      "default": 3
+    },
+    "function_filter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::function.function"
+    },
+    "group_filters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group.group"
+    }
+  }
+}

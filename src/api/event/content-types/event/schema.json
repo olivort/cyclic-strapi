@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,9 +26,14 @@
       "type": "date"
     },
     "public": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.classe"
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::group.group"
+    },
+    "category_events": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category-event.category-event"
     }
   }
 }

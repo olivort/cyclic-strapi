@@ -4,10 +4,11 @@
   "info": {
     "singularName": "student",
     "pluralName": "students",
-    "displayName": "Student"
+    "displayName": "Student",
+    "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,22 +20,23 @@
       "targetField": "name"
     },
     "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
-    "parents": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::parent.parent",
-      "inversedBy": "students"
+      ]
     },
     "group": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::group.group",
+      "inversedBy": "students"
+    },
+    "family": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::family.family",
       "inversedBy": "students"
     }
   }

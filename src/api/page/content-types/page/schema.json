@@ -42,8 +42,10 @@
         "sections.pricing",
         "sections.rich-text",
         "sections.team-grid",
-        "sections.testimonials-group"
-      ]
+        "sections.testimonials-group",
+        "sections.team-grid-filter"
+      ],
+      "required": true
     },
     "slug": {
       "type": "uid",
