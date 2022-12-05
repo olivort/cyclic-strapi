@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -36,14 +36,22 @@
       "type": "uid",
       "targetField": "name"
     },
-    "fonction": {
-      "type": "string"
-    },
     "groups": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::group.group",
       "mappedBy": "teams"
+    },
+    "function": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::function.function"
+    },
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "team_member"
     }
   }
 }

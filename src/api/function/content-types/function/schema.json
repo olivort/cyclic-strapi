@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "category_events",
+  "collectionName": "functions",
   "info": {
-    "singularName": "category-event",
-    "pluralName": "category-events",
-    "displayName": "Category Event",
-    "description": ""
+    "singularName": "function",
+    "pluralName": "functions",
+    "displayName": "Function"
   },
   "options": {
     "draftAndPublish": false
@@ -19,10 +18,6 @@
     },
     "description": {
       "type": "text"
-    },
-    "slug": {
-      "type": "uid",
-      "targetField": "name"
     }
   }
 }

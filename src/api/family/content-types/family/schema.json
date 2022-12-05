@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "groups",
+  "collectionName": "families",
   "info": {
-    "singularName": "group",
-    "pluralName": "groups",
-    "displayName": "Group",
+    "singularName": "family",
+    "pluralName": "families",
+    "displayName": "Family",
     "description": ""
   },
   "options": {
@@ -12,23 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "slug": {
+      "type": "uid"
     },
     "description": {
       "type": "text"
-    },
-    "teams": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::team.team",
-      "inversedBy": "groups"
     },
     "students": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::student.student",
-      "mappedBy": "group"
+      "mappedBy": "family"
+    },
+    "parents": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::parent.parent",
+      "mappedBy": "families"
     }
   }
 }
